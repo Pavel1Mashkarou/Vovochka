@@ -166,3 +166,26 @@ double IsGood (int[] Mark)
     return G1;
 }
 
+double T1 = Time (Les1);
+double T2 = Time (Les2);
+double T3 = Time (Les3);
+double T4 = Time (Les4);
+double T5 = Time (Les5);
+
+double Time ( int Les )
+{
+    double CountTimeBreak = Les -1;
+    double time = Les * 45/60 + CountTimeBreak*15/60; 
+    return time;
+}
+
+System.Console.WriteLine($"Вовочка просидит на уроках в понедельник {T1} часов.");
+System.Console.WriteLine($"Вовочка просидит на уроках во вторник {T2} часов.");
+System.Console.WriteLine($"Вовочка просидит на уроках в среду {T3} часов.");
+System.Console.WriteLine($"Вовочка просидит на уроках в четверг {T4} часов.");
+System.Console.WriteLine($"Вовочка просидит на уроках в пятницу {T5} часов.");
+
+double TO = T1+T2+T3+T4+T5;
+
+System.Console.WriteLine($"Общее время учёбы Вовочки за неделю - {TO} часов.");
+
