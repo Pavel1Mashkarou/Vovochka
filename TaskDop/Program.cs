@@ -43,6 +43,12 @@ for (int i = 0; i < Mark1.Length; i++)
 }
 System.Console.WriteLine("]");
 
+System.Console.WriteLine("Инициализация отметок, полученных на уроках:");
+
+double G = IsGood(Mark1);
+System.Console.WriteLine($"{G}% двоек и единиц");
+
+
 int[] Mark2 = Marks(Les2);
 System.Console.Write("Отметки во вторник [");
 for (int i = 0; i < Mark2.Length; i++)
@@ -74,3 +80,19 @@ for (int i = 0; i < Mark5.Length; i++)
     System.Console.Write(Mark5[i]+" ");
 }
 System.Console.WriteLine("]");
+
+double IsGood (int[] Mark)
+{
+    int a = 0;
+    double G = 0;
+    double G1 = 0;
+    while (a < Mark.Length) 
+    {
+        if (Mark[a] == 2 || Mark[a] == 1) G = G + 1;
+        a++;
+    }
+    G1 = G/Mark.Length*100;
+    
+    return G1;
+}
+
