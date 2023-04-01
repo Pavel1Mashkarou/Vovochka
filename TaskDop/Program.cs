@@ -14,8 +14,9 @@ int Les3 = HowManyLessons();
 int Les4 = HowManyLessons();
 int Les5 = HowManyLessons();
 
+// Сделали расписание
 System.Console.WriteLine($"Уроков в понедельник: {Les1}");
 System.Console.WriteLine($"Уроков во вторник: {Les2}");
 System.Console.WriteLine($"Уроков в среду: {Les3}");
 System.Console.WriteLine($"Уроков в четверг: {Les4}");
-System.Console.WriteLine($"Уроков в пятницу: {Les5}");
+System.Console.WriteLine($"Уроков в пятницу: {Les5}"); 
