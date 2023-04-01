@@ -45,8 +45,18 @@ System.Console.WriteLine("]");
 
 System.Console.WriteLine("Инициализация отметок, полученных на уроках:");
 
-double G = IsGood(Mark1);
-System.Console.WriteLine($"{G}% двоек и единиц");
+double G1 = IsGood(Mark1);
+System.Console.WriteLine($"{G1}% двоек и единиц");
+
+if (G1 >= 80)
+{
+    System.Console.WriteLine("Вовочка плохо старался на уроках. Необходимо посидеть ещё на одном уроке.");
+    Les1 = Les1 + 1;
+}
+else 
+{
+    System.Console.WriteLine("Вовочка хорошо провёл день. Дополнительных уроков не требуется.");
+}
 
 
 int[] Mark2 = Marks(Les2);
@@ -57,6 +67,21 @@ for (int i = 0; i < Mark2.Length; i++)
 }
 System.Console.WriteLine("]");
 
+System.Console.WriteLine("Инициализация отметок, полученных на уроках:");
+
+double G2 = IsGood(Mark2);
+System.Console.WriteLine($"{G2}% двоек и единиц");
+
+if (G2 >= 80)
+{
+    System.Console.WriteLine("Вовочка плохо старался на уроках. Необходимо посидеть ещё на одном уроке.");
+    Les2 = Les2 + 1;
+}
+else 
+{
+    System.Console.WriteLine("Вовочка хорошо провёл день. Дополнительных уроков не требуется.");
+}
+
 int[] Mark3 = Marks(Les3);
 System.Console.Write("Отметки в среду [");
 for (int i = 0; i < Mark3.Length; i++)
@@ -64,6 +89,21 @@ for (int i = 0; i < Mark3.Length; i++)
     System.Console.Write(Mark3[i]+" ");
 }
 System.Console.WriteLine("]");
+
+System.Console.WriteLine("Инициализация отметок, полученных на уроках:");
+
+double G3 = IsGood(Mark3);
+System.Console.WriteLine($"{G3}% двоек и единиц");
+
+if (G3 >= 80)
+{
+    System.Console.WriteLine("Вовочка плохо старался на уроках. Необходимо посидеть ещё на одном уроке.");
+    Les3 = Les3 + 1;
+}
+else 
+{
+    System.Console.WriteLine("Вовочка хорошо провёл день. Дополнительных уроков не требуется.");
+}
 
 int[] Mark4 = Marks(Les4);
 System.Console.Write("Отметки в четверг [");
@@ -73,6 +113,21 @@ for (int i = 0; i < Mark4.Length; i++)
 }
 System.Console.WriteLine("]");
 
+System.Console.WriteLine("Инициализация отметок, полученных на уроках:");
+
+double G4 = IsGood(Mark4);
+System.Console.WriteLine($"{G4}% двоек и единиц");
+
+if (G4 >= 80)
+{
+    System.Console.WriteLine("Вовочка плохо старался на уроках. Необходимо посидеть ещё на одном уроке.");
+    Les4 = Les4 + 1;
+}
+else 
+{
+    System.Console.WriteLine("Вовочка хорошо провёл день. Дополнительных уроков не требуется.");
+}
+
 int[] Mark5 = Marks(Les5);
 System.Console.Write("Отметки в пятницу [");
 for (int i = 0; i < Mark5.Length; i++)
@@ -80,6 +135,21 @@ for (int i = 0; i < Mark5.Length; i++)
     System.Console.Write(Mark5[i]+" ");
 }
 System.Console.WriteLine("]");
+
+System.Console.WriteLine("Инициализация отметок, полученных на уроках:");
+
+double G5 = IsGood(Mark5);
+System.Console.WriteLine($"{G5}% двоек и единиц");
+
+if (G5 >= 80)
+{
+    System.Console.WriteLine("Вовочка плохо старался на уроках. Необходимо посидеть ещё на одном уроке.");
+    Les5 = Les5 + 1;
+}
+else 
+{
+    System.Console.WriteLine("Вовочка хорошо провёл день. Дополнительных уроков не требуется.");
+}
 
 double IsGood (int[] Mark)
 {
